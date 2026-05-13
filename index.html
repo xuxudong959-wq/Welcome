@@ -10,6 +10,12 @@
   * { box-sizing:border-box; }
   body { margin:0; font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
   header { background:var(--brand); color:#fff; padding:32px 20px; }
+  .hero-banner { background:#fff; border-bottom:1px solid var(--line); padding:18px 20px; }
+  .hero-banner .wrap { max-width:880px; margin:0 auto; display:flex; flex-wrap:wrap; gap:14px 28px; align-items:center; justify-content:space-between; }
+  .hero-banner .summary { font-size:15px; color:var(--ink); line-height:1.5; }
+  .hero-banner .summary strong { color:var(--brand); }
+  .hero-banner .quick { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px; color:var(--muted); margin-top:4px; }
+  .hero-banner .quick span { white-space:nowrap; }
   header .wrap { max-width:880px; margin:0 auto; }
   header h1 { margin:0 0 6px; font-size:28px; }
   header p { margin:0; opacity:.95; }
@@ -60,6 +66,20 @@
     <p class="lang" style="color:#dff;">中文 · English · Español · Tiếng Việt</p>
   </div>
 </header>
+
+<div class="hero-banner">
+  <div class="wrap">
+    <div class="summary">
+      <strong data-i18n="hero_lead">A real family medicine clinic in Houston, TX.</strong>
+      <span data-i18n="hero_lead2">Drs. Xudong Xu &amp; Yongfang Chen — primary care for adults, seniors, and children since the 1980s.</span>
+      <div class="quick">
+        <span>📍 9160 Bellaire Blvd, Suite E, Houston, TX 77036</span>
+        <span>📞 <a href="tel:+17139958886">(713) 995-8886</a></span>
+        <span data-i18n="hero_hours">🕒 Mon–Fri 8 AM–4 PM · Sat 8 AM–2 PM</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <main>
   <section class="card">
@@ -157,6 +177,7 @@
     <ul>
       <li><a href="privacy.html" data-i18n="link_privacy">Privacy Policy</a></li>
       <li><a href="terms.html" data-i18n="link_terms">Terms of Service &amp; SMS Disclosure</a></li>
+      <li><a href="sms-signup.html" data-i18n="link_sms_signup">SMS Reminders — Sign-Up &amp; Opt-In</a></li>
     </ul>
   </section>
 </main>

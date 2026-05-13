@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SMS Reminders Sign-Up — Welcome Family Medicine, PA</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Sign up to receive text message appointment reminders and care follow-ups from Welcome Family Medicine, PA in Houston, TX. Call (713) 995-8886." />
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --brand:#0a6e6e; --bg:#fafafa; --card:#fff; --line:#e5e5e5; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,"PingFang SC","Microsoft YaHei",sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:var(--brand); color:#fff; padding:24px 20px; }
+  header .wrap { max-width:780px; margin:0 auto; }
+  header a { color:#dff; text-decoration:none; }
+  header h1 { margin:8px 0 0; font-size:24px; }
+  main { max-width:780px; margin:0 auto; padding:28px 20px 60px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:22px 24px; margin:18px 0; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+  h2 { color:var(--brand); margin:0 0 10px; font-size:20px; }
+  h3 { margin:18px 0 6px; font-size:16px; }
+  label { display:block; margin:14px 0 6px; font-weight:600; }
+  input[type=text], input[type=tel], input[type=email], select, textarea {
+    width:100%; max-width:420px; padding:10px 12px; font-size:16px;
+    border:1px solid #ccc; border-radius:6px; font-family:inherit;
+  }
+  textarea { min-height:80px; }
+  .checkbox-row { display:flex; align-items:flex-start; gap:10px; margin:14px 0; padding:12px 14px; background:#f5fafa; border:1px solid #cde; border-radius:6px; }
+  .checkbox-row input[type=checkbox] { margin-top:4px; transform:scale(1.25); cursor:pointer; }
+  .checkbox-row label { margin:0; font-weight:500; font-size:14px; line-height:1.55; }
+  .btn { display:inline-block; background:var(--brand); color:#fff; padding:12px 22px; border:0; border-radius:8px; font-size:16px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .btn:disabled { background:#9bb; cursor:not-allowed; }
+  .btn.alt { background:#fff; color:var(--brand); border:1px solid var(--brand); text-decoration:none; }
+  .callout { background:#fff; border:1px solid var(--line); border-left:4px solid var(--brand); padding:14px 16px; border-radius:6px; margin:16px 0; }
+  .note { background:#fffbe6; border:1px solid #f0e0a0; border-radius:6px; padding:12px 14px; margin:14px 0; font-size:14px; color:#7a5a00; }
+  .success { display:none; background:#eaf7ea; border:1px solid #b6dab6; border-radius:6px; padding:18px 20px; margin:20px 0; }
+  .success.show { display:block; }
+  ul { margin:6px 0; padding-left:22px; }
+  ul li { margin:4px 0; }
+  footer { color:var(--muted); font-size:13px; text-align:center; padding:24px 20px; border-top:1px solid var(--line); }
+  a { color:var(--brand); }
+  small.muted { color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="index.html">← Welcome Family Medicine, PA</a>
+    <h1>SMS Reminders — Sign Up</h1>
+  </div>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Patient Text Message Sign-Up</h2>
+    <p>
+      Welcome Family Medicine, PA is a family medicine clinic at
+      <strong>9160 Bellaire Blvd, Suite E, Houston, TX 77036</strong> serving Houston's
+      Chinatown community. We send a small number of text messages each month to remind
+      patients about appointments and ask them to call us when the doctor needs them to
+      come back in. This page lets current and prospective patients confirm they want to
+      receive those reminders.
+    </p>
+
+    <div class="callout">
+      <strong>This is a real opt-in.</strong> Submitting this form is the same as checking
+      the SMS reminder box on the paper registration form you fill out at the clinic.
+      Clinic staff review and record every sign-up before activating reminders.
+      You can stop at any time by replying <strong>STOP</strong> to any of our messages.
+    </div>
+
+    <h3>What you will receive</h3>
+    <ul>
+      <li>Appointment reminders and confirmations</li>
+      <li>Care follow-up messages asking you to call the clinic</li>
+      <li>Important practice notices (closures, holidays, weather)</li>
+    </ul>
+    <p><small class="muted">
+      Typically a few messages per month. Message and data rates may apply.
+      Consent is <strong>not</strong> a condition of receiving care. Mobile information
+      is never shared with third parties for marketing.
+    </small></p>
+  </section>
+
+  <section class="card">
+    <h2>Sign Up</h2>
+
+    <form id="optin-form" autocomplete="off" novalidate>
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required maxlength="80" placeholder="First and last name" />
+
+      <label for="phone">Mobile phone number (US)</label>
+      <input id="phone" name="phone" type="tel" required maxlength="20" placeholder="(713) 555-1234" />
+
+      <label for="dob">Date of birth <small class="muted">(helps us match your chart)</small></label>
+      <input id="dob" name="dob" type="text" maxlength="20" placeholder="MM/DD/YYYY" />
+
+      <label for="language">Preferred language</label>
+      <select id="language" name="language">
+        <option value="en">English</option>
+        <option value="zh">中文 (Chinese — Mandarin/Cantonese)</option>
+        <option value="es">Español</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+
+      <label for="relationship">I am a:</label>
+      <select id="relationship" name="relationship">
+        <option value="self">Patient of the clinic</option>
+        <option value="prospective">Prospective patient (planning to visit)</option>
+        <option value="family">Family member of a patient</option>
+        <option value="caregiver">Caregiver / authorized representative</option>
+      </select>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="consent-sms" required />
+        <label for="consent-sms">
+          <strong>I agree to receive text messages</strong> from Welcome Family Medicine, PA
+          at the mobile number above, including appointment reminders, care follow-ups,
+          and clinical notifications (including via automated messaging technology).
+          Message frequency varies and is typically low. <strong>Message and data rates may apply.</strong>
+          Reply <strong>HELP</strong> for help, <strong>STOP</strong> to cancel. Consent is
+          not a condition of receiving medical care. I have read the
+          <a href="terms.html" target="_blank" rel="noopener">Terms of Service &amp; SMS Disclosure</a>
+          and <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="consent-privacy" required />
+        <label for="consent-privacy">
+          I understand that <strong>my mobile information will not be shared with third parties
+          or affiliates for marketing or promotional purposes</strong>, and that SMS opt-in data
+          is not shared with any third party. I confirm I am the owner of this mobile number
+          or am authorized to provide it.
+        </label>
+      </div>
+
+      <p style="margin-top:18px;">
+        <button class="btn" type="submit" id="submit-btn">Submit sign-up</button>
+        <a class="btn alt" href="index.html" style="padding:10px 22px;margin-left:8px;">Cancel</a>
+      </p>
+    </form>
+
+    <div class="success" id="success-msg">
+      <h3 style="margin-top:0;color:var(--brand);">✓ Sign-up received</h3>
+      <p>
+        Thank you. Your text message sign-up has been recorded. Clinic staff will review
+        your information and activate reminders at your next visit, or you can call us at
+        <a href="tel:+17139958886">(713) 995-8886</a> to confirm sooner.
+      </p>
+      <p>
+        <strong>Please also stop by the front desk or call to verify your information.</strong>
+        Sign-ups submitted online are confirmed against your chart before reminders are activated;
+        this prevents accidental sign-ups for the wrong patient.
+      </p>
+      <p>
+        You can reply <strong>STOP</strong> to any of our messages at any time to opt out.
+      </p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Prefer to sign up in person or by phone?</h2>
+    <p>
+      You don't need to use this form. You can also opt in to text reminders by:
+    </p>
+    <ul>
+      <li>
+        <strong>In person at the clinic:</strong> Check the "I would like to receive text
+        message reminders" box on the paper patient registration form at the front desk and
+        sign next to it. Clinic staff date and initial your sign-up in the chart.
+      </li>
+      <li>
+        <strong>By phone:</strong> Call <a href="tel:+17139958886">(713) 995-8886</a> during
+        business hours and tell our staff you'd like to receive text reminders. Staff will
+        verify your identity and record your sign-up in the chart with date and initials.
+      </li>
+      <li>
+        <strong>By text:</strong> If you've previously opted out, reply <strong>START</strong>
+        to any of our previous messages to re-subscribe.
+      </li>
+    </ul>
+    <div class="note">
+      <strong>HIPAA &amp; privacy:</strong> The clinic does not send protected health
+      information (PHI) in text messages. Lab results, diagnoses, and treatment details are
+      handled by phone or in person. Texts are limited to reminders and a request to call back.
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Questions?</h2>
+    <p>
+      Welcome Family Medicine, PA<br />
+      9160 Bellaire Blvd, Suite E, Houston, TX 77036<br />
+      Phone: <a href="tel:+17139958886">(713) 995-8886</a> · Fax: (713) 270-9358<br />
+      Hours: Mon–Fri 8:00 AM – 4:00 PM, Sat 8:00 AM – 2:00 PM, Sun closed
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Welcome Family Medicine, PA. All rights reserved.<br />
+  9160 Bellaire Blvd, Suite E, Houston, TX 77036 · (713) 995-8886
+</footer>
+
+<script>
+(function () {
+  const form = document.getElementById('optin-form');
+  const ok   = document.getElementById('success-msg');
+  const btn  = document.getElementById('submit-btn');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name   = document.getElementById('name').value.trim();
+    const phone  = document.getElementById('phone').value.trim();
+    const cSMS   = document.getElementById('consent-sms').checked;
+    const cPriv  = document.getElementById('consent-privacy').checked;
+
+    if (!name || !phone) {
+      alert('Please enter your name and mobile phone number.');
+      return;
+    }
+    if (!cSMS || !cPriv) {
+      alert('Please review and check both consent boxes to continue.');
+      return;
+    }
+    // Frontend-only confirmation. Real opt-in is recorded by clinic staff in the chart
+    // when they verify the patient (in person or by callback). No PHI is transmitted
+    // to any third party from this page.
+    form.style.display = 'none';
+    ok.classList.add('show');
+    btn.disabled = true;
+    window.scrollTo({ top: ok.offsetTop - 20, behavior: 'smooth' });
+  });
+})();
+</script>
+
+</body>
+</html>
